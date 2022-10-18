@@ -1,6 +1,7 @@
-body{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
@@ -57,4 +58,27 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+
+}
+.days div{
+    font-size: 14px;
+    margin: 3px;
+    width: 57.5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.days div:hover:not(.empty){
+    border: 2px solid gray;
+    cursor: pointer;
+}
+.today{
+    background-color: darkgray;
 }
